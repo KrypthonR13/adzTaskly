@@ -1,12 +1,3 @@
-<?php
-include '../controller/database.php';
-session_start();
-if (isset($_SESSION['name'])) {
-    header('location:dashboard.php');
-} else {
-
-
-?>
 <!doctype html>
 <html lang="en">
 
@@ -111,4 +102,3 @@ if (isset($_SESSION['name'])) {
 </body>
 
 </html>
-<?php } ?>
