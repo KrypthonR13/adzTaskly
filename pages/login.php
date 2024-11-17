@@ -1,3 +1,6 @@
+<?php
+include '../controller/database.php';
+?>
 <!doctype html>
 <html lang="en">
 
