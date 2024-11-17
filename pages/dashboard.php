@@ -1,10 +1,5 @@
 <?php
 include '../controller/database.php';
-session_start();
-if (!isset($_SESSION['name'])) {
-    header('location: login.php');
-} else {
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -295,4 +290,3 @@ if (!isset($_SESSION['name'])) {
     </script>
 </body>
 </html>
-<?php } ?>
