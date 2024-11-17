@@ -1,9 +1,6 @@
 <?php
 include '../controller/database.php';
 session_start();
-if (!isset($_SESSION['name'])) {
-    header('location: login.php');
-} else {
 
 $data = mysqli_query($conn, "SELECT * FROM task WHERE id_task = '".$_GET['id']."'" );
 $ambil = mysqli_fetch_array($data);
@@ -139,4 +136,3 @@ $deadline = $ambil['deadline'];
 
 </body>
 </html>
-<?php } ?>
